@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="Projects — Eric Cao" description="Project documentation and reports.">
+  <h1>Projects</h1>
+  {projects.length === 0 ? (
+    <p>No projects yet.</p>
+  ) : (
+    <ul class="entry-list">
+      {
+        projects.map((p) => (
+          <li>
+            <a href={`/projects/${p.id}/`}><h2>{p.data.title}</h2></a>
+            <p class="entry-meta">
+              {p.data.status}
+              {p.data.date ? ` · ${p.data.date.toISOString().slice(0, 10)}` : ''}
+            </p>
+            <p>{p.data.description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  )}
+</BaseLayout>

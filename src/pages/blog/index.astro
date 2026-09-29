@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BaseLayout title="Blog — Eric Cao" description="Writing and notes.">
+  <h1>Blog</h1>
+  {posts.length === 0 ? (
+    <p>No posts yet.</p>
+  ) : (
+    <ul class="entry-list">
+      {
+        posts.map((post) => (
+          <li>
+            <a href={`/blog/${post.id}/`}><h2>{post.data.title}</h2></a>
+            <p class="entry-meta">{post.data.pubDate.toISOString().slice(0, 10)}</p>
+            <p>{post.data.description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  )}
+</BaseLayout>
