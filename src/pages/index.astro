@@ -1,0 +1,30 @@
+---
+const projects = [
+  {
+    title: 'Search-and-Cite Plugin',
+    description: 'OpenClaw plugin providing grounded, verifiable search with citations.',
+    link: 'https://github.com/your-handle/your-repo', // TODO
+  },
+];
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eric Cao — Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <h1>Eric Cao</h1>
+      <p>Engineer. Self-hoster. Builder of search-and-cite tooling.</p>
+      <h2>Projects</h2>
+      <ul>
+        {projects.map((p) => (
+          <li>
+            <a href={p.link}>{p.title}</a> — {p.description}
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
