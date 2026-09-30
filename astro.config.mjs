@@ -2,5 +2,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://180Sai.github.io',
+  site: 'https://180sai.cc',
 });
