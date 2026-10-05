@@ -19,5 +19,17 @@ const { Content } = await render(project);
     {project.data.status}
     {project.data.date ? ` · ${project.data.date.toISOString().slice(0, 10)}` : ''}
   </p>
+  {project.data.cover && (
+    <img class="cover" src={project.data.cover} alt={`${project.data.title} cover`} />
+  )}
   <Content />
+  {project.data.gallery.length > 0 && (
+    <div class="gallery">
+      {project.data.gallery.map((src, i) => (
+        <figure>
+          <img src={src} alt={`${project.data.title} — image ${i + 1}`} loading="lazy" />
+        </figure>
+      ))}
+    </div>
+  )}
 </BaseLayout>
