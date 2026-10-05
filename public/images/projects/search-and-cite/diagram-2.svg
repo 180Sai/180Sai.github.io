@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Provenance diagram placeholder">
+  <rect width="800" height="500" fill="#fbfbfa"/>
+  <g font-family="Georgia, serif" fill="#2b2b2b">
+    <rect x="80" y="90" width="300" height="320" rx="10" fill="#ffffff" stroke="#c9c9c4" stroke-width="3"/>
+    <text x="230" y="135" font-size="24" text-anchor="middle">Source</text>
+    <rect x="110" y="170" width="240" height="12" rx="6" fill="#e6e6e2"/>
+    <rect x="110" y="198" width="200" height="12" rx="6" fill="#e6e6e2"/>
+    <rect x="110" y="226" width="220" height="12" rx="6" fill="#e6e6e2"/>
+    <rect x="110" y="254" width="180" height="12" rx="6" fill="#e6e6e2"/>
+    <rect x="420" y="90" width="300" height="320" rx="10" fill="#ffffff" stroke="#c9c9c4" stroke-width="3"/>
+    <text x="570" y="135" font-size="24" text-anchor="middle">Citation</text>
+    <rect x="450" y="170" width="240" height="12" rx="6" fill="#d9e6d9"/>
+    <rect x="450" y="198" width="210" height="12" rx="6" fill="#d9e6d9"/>
+    <rect x="450" y="226" width="230" height="12" rx="6" fill="#d9e6d9"/>
+    <rect x="450" y="254" width="170" height="12" rx="6" fill="#d9e6d9"/>
+    <line x1="380" y1="250" x2="420" y2="250" stroke="#8a8a84" stroke-width="4"/>
+  </g>
+</svg>

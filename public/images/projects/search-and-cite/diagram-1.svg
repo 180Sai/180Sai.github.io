@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Pipeline diagram placeholder">
+  <rect width="800" height="500" fill="#fbfbfa"/>
+  <g font-family="Georgia, serif" fill="#2b2b2b">
+    <rect x="60" y="200" width="180" height="90" rx="10" fill="#ffffff" stroke="#c9c9c4" stroke-width="3"/>
+    <text x="150" y="253" font-size="26" text-anchor="middle">Query</text>
+    <rect x="310" y="200" width="180" height="90" rx="10" fill="#ffffff" stroke="#c9c9c4" stroke-width="3"/>
+    <text x="400" y="253" font-size="26" text-anchor="middle">Fetch</text>
+    <rect x="560" y="200" width="180" height="90" rx="10" fill="#ffffff" stroke="#c9c9c4" stroke-width="3"/>
+    <text x="650" y="253" font-size="26" text-anchor="middle">Cite</text>
+    <line x1="240" y1="245" x2="310" y2="245" stroke="#8a8a84" stroke-width="4" marker-end="url(#a)"/>
+    <line x1="490" y1="245" x2="560" y2="245" stroke="#8a8a84" stroke-width="4" marker-end="url(#a)"/>
+  </g>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#8a8a84"/>
+    </marker>
+  </defs>
+</svg>
